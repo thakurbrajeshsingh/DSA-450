@@ -27,7 +27,7 @@ public class ArraySorted {
 	
 	public static void main(String[] args) {
 		
-		int[] arr = {1,2,3};
+		int[] arr = {2,5,6,8,9,12};
 		boolean ans= ArrSort(arr);
 		System.out.println(ans);
 	}
