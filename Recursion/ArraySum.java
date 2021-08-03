@@ -11,8 +11,8 @@ public class ArraySum {
 		
 	}
 	public static void main(String[] args) {
-		int[] arr = {2,5,6,8,9,12};
-		int n=6;
+		int[] arr = {2,5,1};
+		int n=3;
 		int ans = SumArr(arr, n);
 		System.out.println(ans);
 

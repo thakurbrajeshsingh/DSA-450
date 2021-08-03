@@ -8,7 +8,6 @@ public class Factorial {
 		}
 		int smallAns = fact(n-1);
 		return n*smallAns;
-		
 	}
 	
 	

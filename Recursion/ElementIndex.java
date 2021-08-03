@@ -15,7 +15,7 @@ public class ElementIndex {
 		return ElementIndex(arr,element,0);
 	}
 	public static void main(String[] args) {
-		int[] arr= {1,2,3,4};
+		int[] arr= {3,2,3,4};
 		int ans = ElementIndex(arr, 3);
 		System.out.println(ans);
 

@@ -8,6 +8,7 @@ public class NumOfDigit {
 			return 0;
 		}
 		int smallAns = print(n/10);
+//		System.out.println("ans is"+ smallAns);
 		return smallAns +1;
 	}
 	public static void main(String[] args) {
