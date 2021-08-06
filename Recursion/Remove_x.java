@@ -18,8 +18,10 @@ public class Remove_x {
 	public static void main(String[] args) {
 		String input = "pixpix";
 		String ans = removeX(input);
-		System.out.println(ans);
-
+//		System.out.println(ans);
+		
+		
+		System.out.println(input.substring(0,input.length()-1));
 	}
 
 }
