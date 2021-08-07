@@ -2,20 +2,16 @@ package Recursion;
 
 public class TowerOfHanoi {
 	
-	public static void towerHanoi(int disks,int source,int aux,int dest) {
-		if(disks==0) {
+	public static void Toi(int disk,int Source,int Auxiliary,int destination) {
+		if(disk==0) {
 			return;
 		}
-		towerHanoi(disks-1, source, dest, aux);
-		System.out.println("Move Disk 1 from rod "+ source + "to rod" + dest);
-		towerHanoi(disks-1, aux, source, dest);
+		Toi(disk-1, Source, destination, Auxiliary);
+		System.out.println("Move Disk 1 from Rod "+ Source + " to Rod " + destination);
+		Toi(disk-1, Auxiliary, Source, destination);
 	}
-
 	public static void main(String[] args) {
-		int disks = 2;
-		char a,b,c;
-		towerHanoi(disks, 1,2 ,3 );
-
+		Toi(2, 1, 2, 3);
 	}
 
 }
