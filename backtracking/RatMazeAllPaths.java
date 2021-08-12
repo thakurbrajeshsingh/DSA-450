@@ -11,8 +11,10 @@ public class RatMazeAllPaths {
 	public static void printAllPath(int[][] maze,int i,int j,int path[][]) {
 		int n= maze.length;
 		if(i<0 || i>=n || j<0 || j>=n || maze[i][j]==0 || path[i][j]==1 ) {
+			System.out.println("No Possible Path");
 			return;
 		}
+//		current pos
 		path[i][j]=1;
 		
 		if(i == n-1 && j == n-1) {
