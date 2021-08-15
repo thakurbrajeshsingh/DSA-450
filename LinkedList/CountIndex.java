@@ -28,7 +28,7 @@ public static int print(SizeLL<Integer> head,int pos) {
 	int ith=temp.data;
 	return ith;
 }
-	
+//	<---------------------------------------------------------------->
 //OR (Optimized)
 public static void printIndex(SizeLL<Integer> head,int i) {
 	int pos = 0;
