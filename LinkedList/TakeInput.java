@@ -2,7 +2,6 @@ package LinkedList;
 import java.util.Scanner;
 
 public class TakeInput {
-
 	
 	public static Node<Integer> takeInput() {
 		Scanner sc = new Scanner(System.in);
@@ -10,6 +9,7 @@ public class TakeInput {
 		Node<Integer> head = null;
 		while(data != -1) {
 			Node<Integer> currentNode = new Node<>(data);
+			
 			if(head == null ) {
 				head = currentNode;
 			}
@@ -23,13 +23,27 @@ public class TakeInput {
 			
 			data = sc.nextInt();
 		}
-		
 		return head;
+	}
+	
+	public static void print(Node<Integer> head) {
+		
+		Node<Integer> temp = head;
+		while(temp !=null) {
+			
+		System.out.print(temp.data+"--> ");
+		temp = temp.next;
+		
+		}
 	}
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Node<Integer> head= takeInput();
+		print(head);
+		
+	
+		
 
 	}
 
