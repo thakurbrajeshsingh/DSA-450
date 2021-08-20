@@ -1,6 +1,4 @@
-package Asg1;
-
-import LinkedList.Node;
+package Asg1LL;
 
 public class FindIndexLL {
 
