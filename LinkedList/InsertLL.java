@@ -49,6 +49,9 @@ public class InsertLL {
 		}
 		return head;
 	}
+	
+	
+	
 	public static void print(Node<Integer> head) {
 		Node<Integer> temp = head;
 		while(temp != null) {
