@@ -16,6 +16,11 @@ public class InsertRecursion {
 	
 	public static LLNodeII<Integer> insertRecursion(LLNodeII<Integer> head,int elem,int pos)  {
 		
+		if(head ==null && pos==0) {
+			return head;
+		}
+		
+		
 		if(pos==0) {
 			LLNodeII<Integer> newNode = new LLNodeII<>(elem);
 			newNode.next=head;
@@ -23,8 +28,7 @@ public class InsertRecursion {
 		}else {
 			head.next=insertRecursion(head.next, elem, pos-1);
 			return head;
-		}	
-		
+		}		
 	}
 	
 	
@@ -39,7 +43,7 @@ public class InsertRecursion {
 	public static void main(String[] args) {
 		
 		LLNodeII<Integer> head = inputLL();
-		head = insertRecursion(head, 80, 2);
+		head = insertRecursion(head, 80, 0);
 		printRecursion(head);
 		
 
