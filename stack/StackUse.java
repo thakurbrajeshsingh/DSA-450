@@ -13,9 +13,6 @@ public class StackUse {
 		}
 
 		
-		System.out.println(stack.size());
-		
-		
 		
 		
 		while(! stack.isEmpty()) {

@@ -7,7 +7,7 @@ public class StackUsingArray {
 	private int topIndex;
 
 	public StackUsingArray() {
-		data = new int[10];
+		data = new int[2];
 		topIndex = -1;
 	}
 	
@@ -42,13 +42,23 @@ public StackUsingArray(int size) {
 //			 StackThrowsException e =new StackThrowsException();
 //			 throw e;
 //			 OR
-			 throw new StackThrowsException();
+//			 throw new StackThrowsException();
 //			 throw exception
+			 doubleCapacity();
 		 }
 		return data[++topIndex]=elem;
 	}
 	 
 	 	 
+	private void doubleCapacity() {
+		int[] temp = data;
+		data=new int[2* temp.length];
+		for(int i=0;i<temp.length;i++) {
+			data[i]=temp[i];
+		}
+		
+	}
+
 	// time complexity O(1) just fetching top 
 	public int top() throws StackEmptyException {
 //		if stack is empty
