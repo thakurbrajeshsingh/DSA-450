@@ -29,7 +29,7 @@ public StackUsingArray(int size) {
 			return true;
 		}else {
 			return false;
-		}  //OR
+		} //OR
 		
 //		return topIndex==-1;  //if expression return true else false
 	}
@@ -63,6 +63,7 @@ public StackUsingArray(int size) {
 	public int top() throws StackEmptyException {
 //		if stack is empty
 		if(topIndex==-1) {
+			
 			throw new StackEmptyException();
 		}
 		return data[topIndex];
