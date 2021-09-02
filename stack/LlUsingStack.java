@@ -7,7 +7,7 @@ public class LlUsingStack<T> {
 	
 	private Node<T> head;
 	private int size;
-	private Node<T> tail;
+//	private Node<T> tail;
 	
 	
 	
