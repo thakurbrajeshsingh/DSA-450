@@ -25,8 +25,6 @@ public static boolean isBalanced(String expression) {
 				}
 			}
 		}
-		
-		System.out.println(stack.isEmpty());
 	return stack.isEmpty();	
 		
 	}	
