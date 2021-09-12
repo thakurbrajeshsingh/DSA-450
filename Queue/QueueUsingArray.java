@@ -58,7 +58,7 @@ public class QueueUsingArray {
 		front = 0;
 		rear = temp.length-1;
 	}
-	
+	 
 	
 	public int front() throws QueueEmptyException {
 		if(size == 0) {

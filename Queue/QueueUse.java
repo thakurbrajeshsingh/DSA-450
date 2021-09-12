@@ -15,6 +15,19 @@ public class QueueUse {
 		System.out.println(queue.isEmpty());
 		System.out.println(queue.denqueue());
 		
+		
+//		Queue Using Linked List
+		System.out.println("<------->");
+		
+		QueueUsingLL queueLL = new QueueUsingLL<>();
+//		queueLL.enqueue(10);
+		int[] dataLL = {1,2,3,4,5};
+		for(int i=0;i<dataLL.length;i++) {
+			queueLL.enqueue(data[i]);
+		}
+		System.out.println(queueLL.front());
+		System.out.println(queueLL.dequeue());
+		
 	}
 
 }
