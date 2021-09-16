@@ -4,6 +4,38 @@ import java.util.Scanner;
 
 public class BinaryTreeUse {
 
+	public static BinaryTreeNode<Integer> treeInputBetter(boolean isRoot,int parentData,boolean isLeft) {
+		
+		if(isRoot) {
+		System.out.print("Enter Root Data: ");
+		}
+		else {
+		if(isLeft) {
+			System.out.print("Enter left child of "+parentData +" : ");
+		}
+		else {
+			System.out.print("Enter right child of "+parentData+" : ");
+		}
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		int rootData=sc.nextInt();
+		
+		if(rootData == -1) {
+			return null;
+		}
+		
+		BinaryTreeNode<Integer> root = new BinaryTreeNode<Integer>(rootData);
+		BinaryTreeNode<Integer> leftChild = treeInputBetter(false,rootData,true); 
+		BinaryTreeNode<Integer> rightChild = treeInputBetter(false,rootData,false);
+		root.left=leftChild;
+		root.right=rightChild;
+		return root;
+		
+	}
+	
+	
+	
 	
 	public static BinaryTreeNode<Integer> treeInput() {
 		System.out.print("Enter Root Data: ");
@@ -57,7 +89,8 @@ public class BinaryTreeUse {
 //		rootLeft.right=twoRight;
 //		rootRight.left=threeLeft;
 		
-		BinaryTreeNode<Integer> root = treeInput();
+//		BinaryTreeNode<Integer> root = treeInput();
+		BinaryTreeNode<Integer> root = treeInputBetter(true,0,true);
 		printTree(root);
 		
 	}
