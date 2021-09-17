@@ -24,8 +24,8 @@ public class NumberNode {
 		root.right=rightChild;
 //		return root;
 		int ans = numNodes(root);
-		System.out.println(ans);
-		
+		System.out.println(ans );
+		 
 		
 		
 		
