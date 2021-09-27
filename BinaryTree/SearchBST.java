@@ -2,7 +2,7 @@ package BinaryTree;
 
 public class SearchBST {
 	
-	
+//	Find Element in BST
 	public static boolean findBST(BinaryTreeNode<Integer> root,int k) {
 		
 		if(root == null) {
@@ -15,9 +15,9 @@ public class SearchBST {
 		else if(root.data> k) {
 			return findBST(root.left, k);
 		}
-		else{
-			return findBST(root.right, k);
-		}
+		
+		return findBST(root.right, k);
+	
 		
 	}
 	
