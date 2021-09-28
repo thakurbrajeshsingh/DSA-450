@@ -1,5 +1,4 @@
 package hashmap;
-
 import java.util.HashMap;
 
 public class Basic {
@@ -27,8 +26,6 @@ public class Basic {
 			v1 = map.get("abcf");
 		}
 		System.out.println("v1 has value "+v1);
-	
-		
 
 	}
 
