@@ -11,7 +11,6 @@ public class RemoveDuplicates {
 		ArrayList<Integer> output = new ArrayList<>();
 		HashMap<Integer,Boolean> map = new HashMap<>();
 		
-		
 		for(int i = 0; i<arr.length;i++) {
 			if(map.containsKey(arr[i])) {
 				continue;
@@ -22,9 +21,6 @@ public class RemoveDuplicates {
 		return output;
 	}
 	
-	
-	
-
 	public static void main(String[] args) {
 		
 		int[] arr = {1,2,3,3,1,2};
